@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #F2BB9B;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+p
+{
+    margin: 10px 0;
+}
+
+.container
+{
+    width: 960px;
+    overflow: auto;
+    margin: auto;
+}
+
+header
+{
+    background: #A0C3D9;
+    color: #401E24;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#main-timeline
+{
+    background: url(../images/line.png) 50% repeat-y;
+    min-height: 700px;
+    margin: 20px 0 20px 0;
+}
+
+.block
+{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.year
+{
+    background: url(../images/point-big.png) no-repeat 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+.year div
+{
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+    display: block;
+    text-align: center;
+}
+
+.event
+{
+    background: url(../images/point-small.png) no-repeat top center;
+    margin: 15px auto;
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.event > div
+{
+    width: 45%;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.right div
+{
+    float: right !important;
+}
+
+.left div
+{
+    float: left !important;
+}
+
+.event time
+{
+    background: palegoldenrod;
+    color: #000;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+footer
+{
+    background: #A0C3D9;
+    color: #401E24;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        width: 95%;
+    }
+
+    header
+    {
+        height: 50px;
+    }
+
+    h1
+    {
+        font-size: large;
+    }
+
+    #main-timeline
+    {
+        background: url(../images/line.png) repeat-y 30px 0;
+    }
+
+    .year
+    {
+        background: url(../images/point-big.png) no-repeat 0 0;
+        text-align: left;
+        margin: 0 !important;
+    }
+
+    .year div
+    {
+        padding-top: 12px;
+    }
+
+    .event
+    {
+        background: url(../images/point-small.png) no-repeat 16px 0;
+    }
+
+    .event > div
+    {
+        width: 85%;
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .right div, .left div
+    {
+        float: right !important;
+    }
+}
